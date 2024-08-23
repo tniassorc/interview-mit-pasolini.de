@@ -1,22 +1,5 @@
-html, body {
-    height: 100%;
-}
-
-html {
-    display: table;
-    margin: auto;
-}
-
-body {
-    display: table-cell;
-    vertical-align: middle;
-    max-width: 1000px;
-}
-
 .frame_wrapper {
     position: relative;
-    transition: transform 0.2s ease-in-out;
-
 }
 
 .top-left {
@@ -31,15 +14,9 @@ body {
   left: 5%;
 }
 
-.frame, #dichterframe{
+.frame {
   z-index: 50;
   width:100%;
-  position:relative;
-  transition: transform 0.2s ease-in-out;
-}
-
-.frame:hover,.frame_wrapper:hover{
-  transform: scale(0.96);
 }
 
 .textblock {
@@ -57,45 +34,46 @@ body {
 
 .grid_wrapper {
 	display: grid;
-  grid-template-rows: auto auto;
-  margin:2vw;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 7px;
+  grid-auto-rows: minmax(100px, auto);
+  align-items: end;
 }
 
-.row1 {
-  display: grid;
-  grid-template-columns: auto auto;
+#title {
+  grid-column: 1 / 4;
+  grid-row: 1;
 }
 
-.col1_1{
-  display: grid;
+#dichter {
+  grid-column: 1 / 4;
+  grid-row: 2 / 5;
 }
 
-.col1_2{
-  display: grid;
-  align-content: end;
+#rabe {
+  grid-column: 2 / 3;
+  grid-row: 3;
 }
 
-.row2 {
-  display: grid;
-  grid-template-columns: auto auto;
+#geschichte {
+  grid-column: 4 / 5;
+  grid-row: 1 / 3;
 }
 
-#dichter{
-  align-self: end;
+#nanni {
+  grid-column: 4 / 6;
+  grid-row: 3 / 5;
+
 }
 
-#geschichte{
-  width: 60%;
+#cocco {
+  grid-column: 1 / 3;
+  grid-row: 6;
 }
 
-
-#rabe{
-  width: 80%;
-margin-left:20%;
-}
-
-#compu{
-  width: 70%
+#compu {
+  grid-column: 1 / 3;
+  grid-row: 7;
 }
 
 h1 {
@@ -125,7 +103,7 @@ h3 {
   h3 {
 	  font-size:6.83vw;
   }
-  .row1, .row2 {
+  .grid_container {
     display: block;
   }
 }

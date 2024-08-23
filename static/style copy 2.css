@@ -1,22 +1,5 @@
-html, body {
-    height: 100%;
-}
-
-html {
-    display: table;
-    margin: auto;
-}
-
-body {
-    display: table-cell;
-    vertical-align: middle;
-    max-width: 1000px;
-}
-
 .frame_wrapper {
     position: relative;
-    transition: transform 0.2s ease-in-out;
-
 }
 
 .top-left {
@@ -31,15 +14,9 @@ body {
   left: 5%;
 }
 
-.frame, #dichterframe{
+.frame {
   z-index: 50;
   width:100%;
-  position:relative;
-  transition: transform 0.2s ease-in-out;
-}
-
-.frame:hover,.frame_wrapper:hover{
-  transform: scale(0.96);
 }
 
 .textblock {
@@ -58,7 +35,7 @@ body {
 .grid_wrapper {
 	display: grid;
   grid-template-rows: auto auto;
-  margin:2vw;
+
 }
 
 .row1 {
@@ -125,7 +102,7 @@ h3 {
   h3 {
 	  font-size:6.83vw;
   }
-  .row1, .row2 {
+  .row1, row2 {
     display: block;
   }
 }
