@@ -5,12 +5,12 @@ body {
 }
 
 h1 {
-  font-size: max(min(4vw, 4rem), 2rem);
+  font-size: max(min(4vw, 4em), 2em);
 }
 
 h2 {
 	font-style:italic;
 	font-weight: normal;
-	font-size: max(min(2vw, 2rem), 1.5rem);
+	font-size: max(min(2vw, 2em), 1.5em);
 
 }
