@@ -11,6 +11,7 @@ body {
     display: table-cell;
     vertical-align: middle;
     max-width: 1000px;
+    cursor: url("resources/cursor.png"),auto;
 }
 
 .frame_wrapper {
@@ -44,6 +45,7 @@ body {
 
 .textblock {
   margin: 0.5vw;
+
 }
 
 #konsum {
@@ -82,6 +84,7 @@ body {
 
 #dichter{
   align-self: end;
+
 }
 
 #geschichte{
