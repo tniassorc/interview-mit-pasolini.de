@@ -1,23 +1,5 @@
 * {
-  cursor: url('/resources/cursor1.png'), auto;
-}
-
-html, body {
-    height: 100%;
-}
-
-html {
-    display: table;
-    margin: auto;
-}
-
-body {
-    font-family: "Garamond", serif;
-    display: table-cell;
-    vertical-align: middle;
-    max-width: 1000px;
-    cursor: url('/resources/cursor1.png'), auto;
-
+  cursor: url('../resources/cursor3.png'), auto;
 }
 
 .frame_wrapper {
@@ -64,7 +46,7 @@ body {
 }
 
 .grid_wrapper {
-	display: grid;
+  display: grid;
   grid-template-rows: auto auto;
   margin:2vw;
 }
@@ -105,6 +87,22 @@ margin-left:20%;
 
 #compu{
   width: 70%
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    font-family: "Garamond", serif;
+    display: table-cell;
+    vertical-align: middle;
+    max-width: 1000px;
 }
 
 h1 {
