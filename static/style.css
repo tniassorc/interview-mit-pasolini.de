@@ -1,11 +1,65 @@
 * {
-  cursor: url('../resources/cursor3.png'), auto;
+  cursor: url('../resources/cursor.png'), auto;
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    font-family: "Garamond", serif;
+    display: table-cell;
+    vertical-align: middle;
+    max-width: 1000px;
+    font-size: 13pt;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 2vh;
+}
+
+.textbody{
+    max-width: 50vw;
+    display: block; /* Ensure no extra space below the image */
+    margin: 0 auto; /* Center-align the image */
+  
+}
+
+a {
+  cursor: url('../resources/cursor_sm.png'), auto;
+  color: black;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 30pt;
+}
+
+h2 {
+	font-style:italic;
+	font-weight: normal;
+	font-size:18pt;
+}
+
+h3 {
+	font-style:italic;
+	font-size:24pt;
+}
+
+.centrimg {
+    max-width: 50vw;
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure no extra space below the image */
+    margin: 0 auto; /* Center-align the image */
 }
 
 .frame_wrapper {
     position: relative;
     transition: transform 0.2s ease-in-out;
-
 }
 
 .top-left {
@@ -25,7 +79,6 @@
   width:100%;
   position:relative;
   transition: transform 0.2s ease-in-out;
-
 }
 
 .frame:hover,.frame_wrapper:hover{
@@ -33,11 +86,12 @@
 }
 
 .textblock {
-  margin: 0.5vw;
+  margin: 5px;
 }
 
 #konsum {
   width: 50%;
+  z-index: 100;
 }
 
 #link {
@@ -48,12 +102,14 @@
 .grid_wrapper {
   display: grid;
   grid-template-rows: auto auto;
-  margin:2vw;
+  gap: 1px;
+
 }
 
 .row1 {
   display: grid;
   grid-template-columns: auto auto;
+  gap: 5px;
 }
 
 .col1_1{
@@ -67,7 +123,8 @@
 
 .row2 {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto 55%;
+  gap: 5px;
 }
 
 #dichter{
@@ -79,48 +136,45 @@
   width: 60%;
 }
 
+.col2_1{
+  display: grid;
+}
 
 #rabe{
   width: 80%;
-margin-left:20%;
+  margin-left:20%;
+}
+
+#menu {
+  height: 130%;
+  align-self: end;
+  align-content: end;
+  cursor: url('../resources/cursor_sm.png'), auto;
+}
+.menuitem:hover {
+  font-style: italic;
 }
 
 #compu{
   width: 70%
 }
 
-html, body {
-    height: 100%;
-}
-
-html {
-    display: table;
-    margin: auto;
-}
-
-body {
-    font-family: "Garamond", serif;
-    display: table-cell;
-    vertical-align: middle;
-    max-width: 1000px;
-}
-
-h1 {
-  font-size: 30pt;
-}
-
-h2 {
-	font-style:italic;
-	font-weight: normal;
-	font-size:18pt;
-}
-
-h3 {
-	font-style:italic;
-	font-size:24pt;
+.onlym {
+  display:none;
 }
 
 @media screen and (max-width: 800px){
+  body{
+    font-size: 15pt;
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+  
+  .textbody{
+    max-width: 100vw;
+
+}
+  
 	h1 {
 		font-size: 6.83vw;
 		text-align: center;
@@ -135,10 +189,59 @@ h3 {
   .row1, .row2 {
     display: block;
   }
+  
+  #konsum {
+    width: 37%;
+  }
+  
+  .col1_2{
+    display: flex;
+    gap: 5px;
+  }
+  
+  #geschichte{
+    width: 100%;
+  }
+  
+  .row2 {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  
+  .col2_1{
+    width: 50%;
+  }
+  
+  .col2_2{
+    width: 50%;
+  }
+  
+  #rabe{
+    width: 100%;
+    margin-left: 0;
+  }
+  
+  #compu{
+    width: 100%;
+  }
+  
+  #menu {
+    align-self: end;
+    text-align: right;
+    margin-bottom: 5px;
+  }
+  
+  .onlym {
+    display:block;
+  }
 }
   
-@media screen and (max-width: 400px){
+@media screen and (max-width: 430px){
   body {
     font-size:4vw;
   }
+  .textbody{
+    max-width: 100vw;
+    font-size: 13pt;
+}
 }
