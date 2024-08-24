@@ -1,3 +1,7 @@
+* {
+  cursor: url('/resources/cursor1.png'), auto;
+}
+
 html, body {
     height: 100%;
 }
@@ -8,10 +12,12 @@ html {
 }
 
 body {
+    font-family: "Garamond", serif;
     display: table-cell;
     vertical-align: middle;
     max-width: 1000px;
-    cursor: url("resources/cursor.png"),auto;
+    cursor: url('/resources/cursor1.png'), auto;
+
 }
 
 .frame_wrapper {
@@ -37,6 +43,7 @@ body {
   width:100%;
   position:relative;
   transition: transform 0.2s ease-in-out;
+
 }
 
 .frame:hover,.frame_wrapper:hover{
@@ -45,7 +52,6 @@ body {
 
 .textblock {
   margin: 0.5vw;
-
 }
 
 #konsum {
