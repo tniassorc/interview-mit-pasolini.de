@@ -1,13 +1,25 @@
+body{
+    max-width: 850px;
+    width: 70vw;
+}
+
 .grid{
     display: grid;
     grid-template: 
     "a c" auto
+    ". c" auto        
     "b c" auto / min(20vw, 200px) auto ;
     gap: 20px;
 }
 
+#back{
+    position: sticky;
+    top: 20px;
+}
+
 .frame_wrapper{
     grid-area: a;
+    height: auto;
 }
 
 #menu {
@@ -23,7 +35,7 @@
 }
 
 #subtitle{
-    margin-left: 15%
+    margin-top: 0;
 }
 
 .textbody{
@@ -31,8 +43,7 @@
 }
 
 .textbody > p {
-    width: 70%;
-    margin: 1em 15%;;
+    margin: 1em 0%;;
 }
 
 .onlym {
@@ -41,6 +52,14 @@
 
 
 @media screen and (max-width: 800px){   
+    
+    body{
+        width: 100%;
+    }
+    
+    #back {
+        position: relative;
+    }
     
     .grid{
         display: block;
@@ -59,14 +78,9 @@
     }
     
     #subtitle{
-        margin-top: 18pt;
+        margin-top: 2em;
         text-align: left;
         margin-left: 0;
-    }
-    
-    .textbody > p {
-        width: 80%;
-        margin: 1em 10%;
     }
     
     #menu {
