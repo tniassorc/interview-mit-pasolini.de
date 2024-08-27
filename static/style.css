@@ -2,20 +2,19 @@
     cursor: url('../resources/cursor.png'), auto;
 }
 
-html, body {
+body, #body {
     height: 100%;
 }
 
-html {
+body {
     display: table;
     margin: auto;
+    overflow-x: hidden;
 }
 
-
-
-body {
+#body {
     font-family: "Garamond", serif;
-    line-height: 1;
+    letter-spacing: 0.01em;
     display: table-cell;
     vertical-align: top;
     max-width: 1000px;
@@ -25,9 +24,19 @@ body {
 }
 
 a {
-  cursor: url('../resources/cursor_sm.png'), auto;
   color: black;
-  text-decoration: none;
+  color: #555555;
+  text-decoration: underline; 
+
+}
+
+a:hover {
+  font-style: italic;
+  cursor: url('../resources/cursor_active.png'), auto;
+}
+
+.italiclink:hover {
+  font-style: normal;
 }
 
 h1 {
@@ -45,17 +54,12 @@ img {
     display: block; /* Ensure no extra space below the image */
 }
 
-.frame_wrapper {
-    position: relative;
-    transition: transform 0.2s ease-in-out;
-}
-
 .imgtext {
   position: absolute;
   top: 2.5%;
   left: 5%;
   width: 50%;
-  z-index: 100;
+  z-index: 0;
 }
 
 .bottom-left {
@@ -71,8 +75,19 @@ img {
   transition: transform 0.2s ease-in-out;
 }
 
+.frame_wrapper {
+    position: relative;
+    transition: transform 0.2s ease-in-out;
+}
+
 .frame:hover,.frame_wrapper:hover{
   transform: scale(0.96);
+}
+
+
+.frame img:hover,.frame_wrapper img:hover{
+            cursor: url('../resources/cursor_active.png'), auto;
+
 }
 
 #titleblock {
@@ -137,17 +152,12 @@ img {
 #rabe{
   width: 80%;
   margin-left:20%;
+  margin-bottom: 70%;
 }
 
 #menu {
   align-self: end;
   align-content: end;
-  cursor: url('../resources/cursor_sm.png'), auto;
-  font-style: italic;
-}
-
-.menuitem:hover {
-  font-style: normal;
 }
 
 #compu{
@@ -161,8 +171,8 @@ img {
 @media screen and (max-width: 800px){
   body{
     font-size: 15pt;
-    padding-left: 2vw;
-    padding-right: 2vw;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
   }
   
 	h1 {
@@ -216,6 +226,8 @@ img {
   }
   
   #menu {
+    position: relative;
+    z-index: 100;
     display:table-cell;
     vertical-align:bottom;
     text-align: right;

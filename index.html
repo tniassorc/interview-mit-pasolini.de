@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="de">
 <head>
 	<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
@@ -15,98 +15,100 @@
 	<link rel="stylesheet" href="./static/style.css" />
 </head>
 <body>
-	<div class="grid_wrapper">
-		<div class="row row1">
-			<div class="col col1_1">
-				<div id="titleblock">
-					<h1 id="title">INTERVIEW MIT PASOLINI</h1>
-					<h2 id="untertitel">Graphic Novel von Davide Toffolo, <br>
-					erschienen in der Galerie der abseitigen Künste</h2>
+	<div id=body>
+		<div class="grid_wrapper">
+			<div class="row row1">
+				<div class="col col1_1">
+					<div id="titleblock">
+						<h1 id="title">INTERVIEW MIT PASOLINI</h1>
+						<h2 id="untertitel">Graphic Novel von Davide Toffolo, <br>
+						erschienen in der Galerie der abseitigen Künste</h2>
+					</div>
+					<div id="dichter" class="frame_wrapper">
+						<a href="buch" title="		Über das Buch">
+							<picture>
+								<source
+								srcset="./resources/m_dichterframe_gr.png"
+								media="(max-width: 800px)"
+								/>
+								<img id="dichterframe"
+								src="./resources/d_dichterframe.png" 
+								alt="Der Dichter Pier Paolo Pasolini"/>
+							</picture>
+						</a>
+						<p class="imgtext"> »Das Interview bietet Gelegenheit […] für die Übergabe von Zeugenschaft, für die Übertragung ansteckender Gedanken.« <i>Marco Antonio Bazzocchi</i></p>
+						<!-- <h3><a id="link" class="bottom-left" href="https://www.galerie-der-abseitigen-kuenste.de/produkt/davide-toffolo-interview-mit-pasolini"> Zum Shop</a></h3> -->
+					</div>
 				</div>
-				<div id="dichter" class="frame_wrapper">
-					<a href="buch" title="		Über das Buch">
+				<div class="col col1_2">
+					<a id="geschichte" class="frame" href="pasolini" title="				Pier Paolo Pasolini">
 						<picture>
 							<source
-							srcset="./resources/m_dichterframe_gr.png"
+							srcset="./resources/m_diegeschichte.png"
 							media="(max-width: 800px)"
 							/>
-							<img id="dichterframe"
-							src="./resources/d_dichterframe.png" 
-							alt="Der Dichter Pier Paolo Pasolini"/>
+							<img
+							src="./resources/d_diegeschichte.png"
+							alt="Pier Paolo Pasolinis Geschichte"/>
 						</picture>
 					</a>
-					<p class="imgtext"> »Das Interview bietet Gelegenheit […] für die Übergabe von Zeugenschaft, für die Übertragung ansteckender Gedanken.« <i>Marco Antonio Bazzocchi</i></p>
-					<!-- <h3><a id="link" class="bottom-left" href="https://www.galerie-der-abseitigen-kuenste.de/produkt/davide-toffolo-interview-mit-pasolini"> Zum Shop</a></h3> -->
+					<a id="nanni" class="frame" href="toffolo" title="		Davide Toffolo & Pasolini">
+						<picture>
+							<source
+							srcset="./resources/m_nanni.png"
+							media="(max-width: 800px)"
+							/>
+							<img
+							src="./resources/d_nanni.png"
+							alt="Toffolo vor der Libreria Nanni"/>
+						</picture>
+					</a>
 				</div>
 			</div>
-			<div class="col col1_2">
-				<a id="geschichte" class="frame" href="pasolini" title="				Pier Paolo Pasolini">
-					<picture>
-						<source
-						srcset="./resources/m_diegeschichte.png"
-						media="(max-width: 800px)"
-						/>
-						<img
-						src="./resources/d_diegeschichte.png"
-						alt="Pier Paolo Pasolinis Geschichte"/>
-					</picture>
-				</a>
-				<a id="nanni" class="frame" href="toffolo" title="		Davide Toffolo & Pasolini">
-					<picture>
-						<source
-						srcset="./resources/m_nanni.png"
-						media="(max-width: 800px)"
-						/>
-						<img
-						src="./resources/d_nanni.png"
-						alt="Toffolo vor der Libreria Nanni"/>
-					</picture>
-				</a>
-			</div>
-		</div>
-		<div class="row row2">
-			<div class="col col2_1">
-				<a id="rabe" class="frame" href="material" title="		Weiteres Material zum Buch">
-					<picture>
-						<source
-						srcset="./resources/m_rabe.png"
-						media="(max-width: 800px)"
-						/>
-						<img
-						src="./resources/d_rabe.png"
-						alt="Pasolini über den Raben"/>
-					</picture>
-				</a>
-				<div id="menu">
-					<a class="menuitem" href="https://www.galerie-der-abseitigen-kuenste.de/produkt/davide-toffolo-interview-mit-pasolini" title="		Gadak Shop">Im Shop</a><br class="onlym"> /
-					<a class="menuitem" href="https://instagram.com/gadak_hh" title="		Instagram">@gadak_hh</a><br class="onlym"> /
-					<a class="menuitem" href="impressum" title="		Impressum">Impressum</a></br>
-					<p style="font-size: 0.7em; margin-bottom: 0pt">© 2024 Galerie der abseitigen Künste</p>
+			<div class="row row2">
+				<div class="col col2_1">
+					<a id="rabe" class="frame" href="material" title="		Weiteres Material zum Buch">
+						<picture>
+							<source
+							srcset="./resources/m_rabe.png"
+							media="(max-width: 800px)"
+							/>
+							<img
+							src="./resources/d_rabe.png"
+							alt="Pasolini über den Raben"/>
+						</picture>
+					</a>
+					<div id="menu">
+						<a class="menuitem" href="https://www.galerie-der-abseitigen-kuenste.de/produkt/davide-toffolo-interview-mit-pasolini" title="		Gadak Shop" target="_blank">Im Shop</a><br class="onlym"> /
+						<a class="menuitem" href="https://instagram.com/gadak_hh" title="		Instagram" target="_blank">@gadak_hh</a><br class="onlym"> /
+						<a class="menuitem" href="impressum" title="		Impressum">Impressum</a></br>
+						<p style="font-size: 0.7em; margin-bottom: 0pt">© 2024 Galerie der abseitigen Künste</p>
+					</div>
 				</div>
-			</div>
-			<div class="col col2_2">
-				<a class="frame"  ref="coccodrillo" title="		Il Coccodrillo / Das Krokodil">
-					<picture>
-						<source
-						srcset="./resources/m_cocco.png"
-						media="(max-width: 800px)"
-						/>
-						<img
-						src="./resources/d_cocco.png"
-						alt="Toffolo vor der Libreria Nanni"/>
-					</picture>
-				</a>
-				<a id="compu" class="frame" href="blog" title="		Blog">
-					<picture>
-						<source
-						srcset="./resources/m_compu.png"
-						media="(max-width: 800px)"
-						/>
-						<img									
-						src="./resources/d_compu.png"
-						alt="Toffolo am Computer"/>
-					</picture>
-				</a>
+				<div class="col col2_2">
+					<a class="frame"  href="/resources/Coccodrillo_Deutsch_Oberbaum.pdf" title="		Il Coccodrillo / Das Krokodil" target="_blank">
+						<picture>
+							<source
+							srcset="./resources/m_cocco.png"
+							media="(max-width: 800px)"
+							/>
+							<img
+							src="./resources/d_cocco.png"
+							alt="Toffolo vor der Libreria Nanni"/>
+						</picture>
+					</a>
+					<a id="compu" class="frame" href="404_blog" title="		Blog">
+						<picture>
+							<source
+							srcset="./resources/m_compu.png"
+							media="(max-width: 800px)"
+							/>
+							<img									
+							src="./resources/d_compu.png"
+							alt="Toffolo am Computer"/>
+						</picture>
+					</a>
+				</div>
 			</div>
 		</div>
 	</div>

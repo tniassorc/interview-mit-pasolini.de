@@ -12,22 +12,26 @@ body{
     gap: 20px;
 }
 
-#back{
+.gridarea_a{
+    grid-area: a;
     position: sticky;
     top: 20px;
-}
-
-.frame_wrapper{
-    grid-area: a;
+    display: flex;
+    flex-direction: column;
     height: auto;
 }
+
+#back{
+    align-self: end;
+}
+
 
 #menu {
     grid-area: b;
 }
 .imgtext{
     top: 0;
-    left:8%;
+    left: 5px;
 }
 
 .content{
@@ -43,11 +47,38 @@ body{
 }
 
 .textbody > p {
-    margin: 1em 0%;;
+    margin: 1em 0%;
+    line-height: 1.15;
+    hyphens: auto;
+
 }
 
-.onlym {
-    display:block;
+.content-block {
+    display: none;
+    margin-top: -1em;
+    font-size: 0.9em;
+    max-height: 0; /* Initially collapsed */
+    overflow: hidden; /* Hide overflow content during the transition */
+    transition: max-height 0.5s ease, opacity 0.1s ease, margin-top 0.5s ease;
+    opacity: 0; /* Start fully transparent */
+}
+
+.content-block.active {
+    display: block; /* Ensure block is displayed */
+    max-height: 5000px; /* Large enough to accommodate the content */
+    opacity: 1; /* Fully visible */
+    margin-left: 1.2em;
+    margin-top: 0;
+    justify-content: left;
+}
+
+.footnoteline{
+    width: 70%;
+    margin-left: 0;
+}
+
+    .coda-img{
+        padding-bottom: 1em
 }
 
 
@@ -57,7 +88,7 @@ body{
         width: 100%;
     }
     
-    #back {
+    .gridarea_a {
         position: relative;
     }
     
@@ -66,16 +97,9 @@ body{
     }
     
     .frame_wrapper{
-        width: 50%;
-        max-width: 200px;
+        width: 150px;
     }
-    
-    .imgtext{
-        top: 5%;
-        left:0;
-        writing-mode: vertical-lr;
-        text-orientation: upright;
-    }
+
     
     #subtitle{
         margin-top: 2em;
@@ -88,11 +112,20 @@ body{
         text-align: left;
         margin-bottom: 5px;
         margin-top: 40pt;
-    }  
-    .onlym {
-        display:none;
+    }
+    
+    .imgtext{
+        left: 70px;
+        top: 18px;
+    }
+    
+    .onlyd{
+        display: none;
+        
     }
 }
+
+
 
 @media screen and (max-width: 430px){
     .textbody > p {
