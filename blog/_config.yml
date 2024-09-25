@@ -24,7 +24,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Blog zu "INTERVIEW MIT PASOLINI",
   der Graphic Novel von Davide Toffolo,
   erschienen in der Galerie der abseitigen Künste.
-baseurl: "/blog" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.interview-mit-pasolini.de" # the base hostname & protocol for your site, e.g. http://example.com
 insta: gadak_hh
 
