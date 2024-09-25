@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="de">
+<head>
+	{% include head.html %}
+	<link rel="stylesheet" href="/static/text.css" />
+	<link rel="stylesheet" href="/static/blog.css" />
+</head>
+<body>
+	<div id="body">
+		<div class="grid">
+			{% include grid_a.html %}
+			<div class="content">
+				<main>
+					{{ content }}
+				</main>
+			</div>
+			{% include menu.html %}
+		</div>
+	</div>
+	<script src="/static/load-content.js"></script>
+	<script src="/static/show-hide.js"></script>
+</body>
+
+</html>
