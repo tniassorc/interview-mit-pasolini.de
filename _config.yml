@@ -43,6 +43,8 @@ url: "https://dev.interview-mit-pasolini.de"
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+timezone: Europe/Berlin
+future: true
 translations:
   months:
     January: "Januar"
