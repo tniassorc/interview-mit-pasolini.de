@@ -41,6 +41,7 @@
           {% assign month = page.date | date: "%B" %}
           {% assign german_month = site.translations.months[month] %}
           <p><em>{{ page.date | date: "%d" }}. {{ german_month }} {{ page.date | date: "%Y" }}</em></p>
+          <img src="{{ post.image | relative_url }}" alt="{{ post.title }} image">
           <div class="post-content">
             {{ content }}
           </div>
