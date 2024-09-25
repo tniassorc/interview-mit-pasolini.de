@@ -26,7 +26,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   erschienen in der Galerie der abseitigen Künste.
 baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "https://www.interview-mit-pasolini.de" # the base hostname & protocol for your site, e.g. http://example.com
-insta:  @gadak_hh
+insta: gadak_hh
 
 # Build settings
 theme: minima
