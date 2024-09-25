@@ -49,6 +49,16 @@ h2 {
 	font-size:18pt;
 }
 
+h3 {
+	font-weight: normal;
+	font-size:18pt; 
+  margin-top: 0;
+}
+
+.shoplink {
+  font-weight: bold;
+}
+
 img {
     max-width: 100%;
     display: block; /* Ensure no extra space below the image */
@@ -119,11 +129,13 @@ img {
 
 .col1_1{
   display: grid;
+  gap: 5px;
 }
 
 .col1_2{
   display: grid;
   align-content: end;
+  gap: 5px;
 }
 
 .row2 {
@@ -143,16 +155,17 @@ img {
 
 .col2_1{
   display: grid;
+  gap: 5px;
 }
 
 .col2_2{
   display: grid;
+  gap: 5px;
 }
 
 #rabe{
   width: 80%;
   margin-left:20%;
-  margin-bottom: 70%;
 }
 
 #menu {
@@ -161,11 +174,16 @@ img {
 }
 
 #compu{
-  width: 70%
+  width: 70%;
 }
 
 .onlym {
   display:none;
+}
+
+.pdfviewer {
+  width: 120%;
+  aspect-ratio: 2/3;
 }
 
 @media screen and (max-width: 800px){
@@ -183,6 +201,11 @@ img {
 		font-size: max(4vw, 15pt);
 		text-align: center;
 	}
+  
+  h3 {
+		font-size: max(4vw, 15pt);
+    text-align: center;
+	} 
   
   .row1, .row2 {
     display: block;
@@ -237,6 +260,10 @@ img {
   .onlym {
     display:block;
   }
+  
+  .pdfviewer {
+    width: 100%;
+  }
 }
   
 @media screen and (max-width: 430px){
@@ -249,6 +276,10 @@ img {
   }
   
 	h2 {
+		font-size: max(4.5vw, 14pt);
+	} 
+  
+  h3 {
 		font-size: max(4.5vw, 14pt);
 	} 
 }
