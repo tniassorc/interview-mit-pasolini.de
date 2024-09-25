@@ -36,7 +36,14 @@
 			</div>
 			<div class="content">
 				<h2 id="subtitle">BLOG</h2>
-				<div id="cms"></div>
+				<ul>
+					{% for post in site.posts %}
+					<li>
+						<a href="{{ post.url }}">{{ post.title }}</a>
+						<small>{{ post.date | date: "%B %e, %Y" }}</small>
+					</li>
+					{% endfor %}
+				</ul>
 			</div>
 			<div id="menu">
 				<a class="menuitem" href="https://www.galerie-der-abseitigen-kuenste.de/produkt/davide-toffolo-interview-mit-pasolini" title="		Gadak Shop" target="_blank">Im Shop</a><br class="onlyd"> /
@@ -46,7 +53,6 @@
 			</div>
 		</div>
 	</div>
-	<script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
 </body>
 
 </html>
