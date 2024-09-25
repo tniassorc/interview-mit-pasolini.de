@@ -1,5 +1,5 @@
 * {
-    cursor: url('../resources/cursor.png'), auto;
+    cursor: url('../resources/cursor.cur'), auto;
 }
 
 body, #body {
@@ -32,7 +32,7 @@ a {
 
 a:hover {
   font-style: italic;
-  cursor: url('../resources/cursor_active.png'), auto;
+  cursor: url('../resources/cursor_active.cur'), auto;
 }
 
 .italiclink:hover {

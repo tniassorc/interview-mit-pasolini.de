@@ -25,6 +25,10 @@ body{
     align-self: end;
 }
 
+.backtext{
+    height: 100%;
+    width: 100%;
+}
 
 #menu {
     grid-area: b;
