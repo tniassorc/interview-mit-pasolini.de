@@ -20,6 +20,7 @@ permalink: /blog/
 	<meta name="viewport" content="width=device-width" />
 	<link rel="stylesheet" href="/static/style.css" />
 	<link rel="stylesheet" href="/static/text.css" />
+	<link rel="stylesheet" href="/static/blog.css" />
 </head>
 <body>
 	<div id="body">
@@ -40,17 +41,24 @@ permalink: /blog/
 					</a>
 				</div>
 			</div>
-			<section>
-				<ul>
+			<div>
+				<h2 id="subtitle">BLOG</h2>
+				<div>
 					{% for post in site.posts %}
-					<li>
-						<a href="{{ post.url }}">{{ post.title }}</a> - 
-						<span>{{ post.date | date: '%B %e, %Y' }}</span>
+					<div class="post">
+						<a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
+						{% assign month = post.date | date: "%B" %}
+						{% assign german_month = site.translations.months[month] %}
+						<p><em>{{ post.date | date: "%d" }}. {{ german_month }} {{ post.date | date: "%Y" }}</em></p>
+						{% if post.image %}
+						<img src="{{ post.image | relative_url }}" alt="{{ post.title }} image">
+						{% endif %}
 						<p>{{ post.excerpt }}</p>
-					</li>
+						<a href="{{ post.url }}">Weiterlesen...</a>
+					</div>
 					{% endfor %}
-				</ul>
-			</section>
+				</div>
+			</div>
 			<div id="menu">
 				<a class="menuitem" href="https://www.galerie-der-abseitigen-kuenste.de/produkt/davide-toffolo-interview-mit-pasolini" title="		Gadak Shop" target="_blank">Im Shop</a><br class="onlyd"> /
 				<a class="menuitem" href="https://instagram.com/gadak_hh" title="		Instagram" target="_blank">@gadak_hh</a><br class="onlyd"> /

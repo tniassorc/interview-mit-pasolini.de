@@ -1,0 +1,18 @@
+backend:
+  name: git-gateway
+  branch: main  # Ensure this matches your main branch in the Git repo
+
+media_folder: "blog_media"  # Where uploaded images for blog posts go
+public_folder: "/blog_media"  # Public URL of uploaded images
+
+collections:
+  - name: "posts"
+    label: "Blog Posts"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Image", name: "image", widget: "image", required: false }

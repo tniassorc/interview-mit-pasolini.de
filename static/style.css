@@ -49,6 +49,12 @@ h2 {
 	font-size:18pt;
 }
 
+h3 {
+	font-weight: normal;
+	font-size:18pt; 
+  line-height: 0;
+}
+
 img {
     max-width: 100%;
     display: block; /* Ensure no extra space below the image */
@@ -249,6 +255,10 @@ img {
   }
   
 	h2 {
+		font-size: max(4.5vw, 14pt);
+	} 
+  
+  h3 {
 		font-size: max(4.5vw, 14pt);
 	} 
 }
