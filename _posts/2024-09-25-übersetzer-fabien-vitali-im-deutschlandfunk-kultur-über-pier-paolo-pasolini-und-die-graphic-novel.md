@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Übersetzer Fabien Vitali im Deutschlandfunk Kultur über Pier Paolo
   Pasolini und die Graphic Novel
 date: 2024-09-25T20:31:00.000Z
