@@ -16,7 +16,11 @@ permalink: /blog
 		<img src="{{ post.image | relative_url }}" alt="{{ post.title }} image">
 		{% endif %}
 		<p>{{ post.excerpt }}</p>
-		<a href="{{ post.url }}">Weiterlesen...</a>
+		{% assign content_paragraphs = post.content | split: '<p>' | size %}
+		{% assign excerpt_paragraphs = post.excerpt | split: '<p>' | size %}
+		{% if content_paragraphs > excerpt_paragraphs %}
+			<a href="{{ post.url }}">Weiterlesen...</a>
+		{% endif %}
 	</div>
 	{% endfor %}
 </div>
